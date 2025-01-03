@@ -22,6 +22,8 @@ script.append("STRING " + code)
 
 with open("script.txt", "w") as f:
     f.write("\n".join(script))
+    f.write("\n")
 
 with open("CODE.txt", "w") as f:
     f.write("Screentime code is " + code)
+    f.write("\n")
