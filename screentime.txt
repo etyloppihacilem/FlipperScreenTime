@@ -1,0 +1,5 @@
+REM This script was generated with screencode.py
+REM The code is 5984
+STRING 5984
+WAIT_FOR_BUTTON_PRESS
+STRING 5984
