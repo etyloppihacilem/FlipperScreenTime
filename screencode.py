@@ -12,8 +12,16 @@ from random import randint
 
 code = str(randint(0, 9999)).zfill(4)
 
-print("REM This script was generated with screencode.py")
-print("REM The code is " + code)
-print("STRING " + code)
-print("WAIT_FOR_BUTTON_PRESS")
-print("STRING " + code)
+script = []
+
+script.append("REM This script was generated with screencode.py")
+script.append("REM The code is " + code)
+script.append("STRING " + code)
+script.append("WAIT_FOR_BUTTON_PRESS")
+script.append("STRING " + code)
+
+with open("script.txt", "w") as f:
+    f.write("\n".join(script))
+
+with open("CODE.txt", "w") as f:
+    f.write("Screentime code is " + code)
